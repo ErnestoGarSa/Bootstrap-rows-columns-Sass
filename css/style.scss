@@ -1,0 +1,150 @@
+$primary-Very-Dark-Magenta:hsl(300,43%,22%);
+$primary-Soft-Pink:hsl(333,80%,67%);
+
+$neutral-Dark-Grayish-Magenta:hsl(303,10%,53%);
+$neutral-Light-Grayish-Magenta:hsl(300,24%,96%);
+$neutral-White:hsl(0,0%,100%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.info{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-image: url("/images/bg-pattern-top-desktop.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    &__title{
+        color: $primary-Very-Dark-Magenta;
+        margin-top: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    &__info{
+        color: $primary-Very-Dark-Magenta;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    &__ranking{
+        display:flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    &__rated{
+        background-color: $neutral-Light-Grayish-Magenta;
+        color: $primary-Very-Dark-Magenta;
+        border-radius: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        height: 4rem;
+    }
+}
+
+.comments{
+    background-color: $primary-Very-Dark-Magenta;
+    border-radius: .5rem;
+    margin: .5rem;
+    padding: 1rem;
+    &__img{
+        border-radius: 100%;
+        width: 25%;
+        margin: .5rem;
+    }
+    &__user{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__name{
+        color: $neutral-White;
+        align-self: center;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+    }
+    &__position{
+        color:$primary-Soft-Pink
+    }
+    &__comment{
+        color:$neutral-White
+    }
+}
+
+.comments-container{
+    background-image: url("/images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media screen and (min-width:992px){
+    .container{
+        margin-top: 2rem;
+        box-shadow: 3px 2px .5rem black;
+        border-radius: .5rem;
+        padding: 3rem;
+    }
+
+    .info{
+        background-image: url("/images/bg-pattern-top-mobile.svg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    &__info{
+        text-align: left;
+    }
+    &__ranking{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__rated{
+        display:flex;
+        flex-direction: row;
+        width: 70%;
+        height: 3rem;
+        padding: .5rem;
+    }
+    &__rated__rev{
+        margin-bottom: 1rem;
+    }
+    &__rated__guru{
+        margin-left: 4rem;
+        margin-bottom: 1rem;
+    }
+    &__rated__best{
+        margin-left: 8rem;
+        margin-bottom: 1rem;
+    }
+
+    .comments-container{
+        background-image: url("/images/bg-pattern-bottom-mobile.svg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .comments{
+        margin-bottom: 4rem;
+    }
+
+    .irene{
+        padding-top: 2rem;
+    }
+
+    .anne{
+        padding-top: 4rem;
+    }
+}
